@@ -1,0 +1,176 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	background: fixed url(../images/video_img.png) no-repeat;
+	background-size: cover;
+	color:white;
+}
+
+.video_bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1000;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+.main-header {
+	max-width:383px;
+	width:100%;
+	margin:0 auto;
+	margin-bottom:150px;
+}
+
+.main-logo {
+	width:100%;
+	max-width:383px;
+	background-color:white;
+	padding:10px;
+	border-bottom-right-radius:70px;
+	border-bottom-left-radius: 70px;
+	margin:0 auto;
+	display:inline-block;
+	text-align:center;
+}
+
+.main-section {
+	max-width:1230px;
+	padding: 0 15px;
+	width:100%;
+	margin:0 auto;
+	margin-bottom:15px;
+}
+
+.user-switch {
+	display:flex;
+	justify-content:space-between;
+
+}
+
+.user-switch__item {
+	text-align:center;
+	max-width:500px;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+}
+
+.user-switch__header {
+	font-family:UbuntuBold;
+	font-size:50px;
+	margin-bottom:57px;
+}
+
+.user-switch__big-text {
+	font-family:UbuntuBoldItalic;
+	font-size:18px;
+	margin-bottom:30px;
+}
+
+.user-switch__small-text {
+	font-size:14px;
+	line-height:20px;
+	margin-left:60px;
+	margin-right:60px;
+	margin-bottom:55px;
+}
+
+.main-button {
+	margin:auto auto 0 auto;
+	display:inline-block;
+	color:#DF362F;
+	background-color:white;
+	text-decoration:none;
+	border-radius:36.5px;
+	padding:13px 50px;
+	font-size:18px;
+	border:5px solid white;
+	transition:all 0.3s;
+	&:hover {
+		//box-shadow:inset 5px 5px 0 0 #DF362F,inset -5px -5px 0 0 #DF362F;
+		border:5px solid #DF362F;
+	}
+}
+
+@media screen and (max-width:920px) {
+
+	.user-switch__header {
+		font-size:30px;
+	}
+
+	.main-header {
+		margin-bottom:100px;
+	}
+
+}
+
+@media screen and (max-width:640px) {
+
+		.user-switch__header {
+		font-size:20px;
+		margin-bottom:30px;
+	}
+
+		.main-header {
+		margin-bottom:50px;
+	}
+
+	.user-switch__item:nth-of-type(1) {
+		margin-right:15px;
+
+	}
+
+	.main-button {
+		padding:10px 30px;
+	}
+
+	.user-switch__small-text {
+		margin:0 0 30px 0;
+	}
+
+	.main-header {
+		max-width:288px;
+	}
+
+}
+
+@media screen and (max-width:480px) {
+
+	.user-switch__small-text {
+		margin:auto 0 30px 0;
+	}
+
+	.main-logo {
+		padding:0;
+	}
+
+}
+
+@media screen and (max-width:360px) {
+
+	.user-switch__small-text {
+		display:none;
+	}
+
+	.user-switch {
+		flex-direction:column;
+	}
+
+	.user-switch__item {
+		margin-bottom:50px;
+	}
+
+	.user-switch__header {
+		margin-bottom:15px;
+	}
+
+	.user-switch__big-text {
+		margin-bottom:15px;
+	}
+
+}
