@@ -2,8 +2,6 @@
   box-sizing: border-box; }
 
 body {
-  background: fixed url("../img/video_img.png") no-repeat;
-  background-size: cover;
   color: white; }
 
 .vidage::before {
