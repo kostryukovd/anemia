@@ -3,11 +3,14 @@
 }
 
 body {
-	background: fixed url(../images/video_img.png) no-repeat;
+	background: fixed url('../img/video_img.png') no-repeat;
 	background-size: cover;
 	color:white;
 }
 
+      .vidage::before {
+        background-image: url('../img/video_img.png');
+}
 .video_bg {
 	position: fixed;
 	top: 0;
@@ -17,6 +20,7 @@ body {
 	min-height: 100%;
 	width: auto;
 	height: auto;
+	color:green;
 }
 
 .main-header {

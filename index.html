@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/lib/vidage.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/razvod.css">
 
@@ -16,9 +17,18 @@
 <body>
 	
 
-<video class="video_bg" autoplay muted loop>
+<!--<video class="video_bg" autoplay muted loop>
 	<source src="video/eriki.mp4" type="video/mp4"></source>
-</video>
+	  Your browser does not support HTML5 video.
+
+</video>-->
+
+    <div class="vidage">
+      <video id="vidage" class="vidage-video" preload="metadata" loop autoplay muted>
+        <source src="video/eriki.mp4" type="video/mp4">
+      </video>
+    </div>
+
 
 <header class = "main-header">
 
@@ -52,6 +62,11 @@
 </div>
 
 	</section>
+
+<script src="js/libs/vidage.js"></script>
+    <script>
+      new Vidage('#vidage')
+    </script>
 
 </body>
 </html>
