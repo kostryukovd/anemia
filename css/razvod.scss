@@ -4,13 +4,21 @@
 
 body {
 	//background: fixed url('../img/video_img.png') no-repeat;
+//background: fixed url('../img/erit_gif.gif') no-repeat;
+
 	//background-size: cover;
 	color:white;
 }
 
       .vidage::before {
         background-image: url('../img/video_img.png');
+        //background-image: url('../img/erit_gif.gif');
 }
+
+.vidage {
+	color:green;
+}
+
 .video_bg {
 	position: fixed;
 	top: 0;
