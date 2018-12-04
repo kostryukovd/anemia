@@ -17,6 +17,11 @@ body {
 
 .vidage {
 	color:green;
+	z-index:-1;
+	video {
+			z-index:9999;
+
+	}
 }
 
 .video_bg {
@@ -75,7 +80,6 @@ body {
 .user-switch__header {
 	font-family:UbuntuBold;
 	font-size:50px;
-	margin-bottom:57px;
 }
 
 .user-switch__big-text {
@@ -107,6 +111,13 @@ body {
 		//box-shadow:inset 5px 5px 0 0 #DF362F,inset -5px -5px 0 0 #DF362F;
 		border:5px solid #DF362F;
 	}
+}
+
+.user-switch__header-link {
+	text-decoration:none;
+	color:white;
+		margin-bottom:57px;
+
 }
 
 @media screen and (max-width:920px) {

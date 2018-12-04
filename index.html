@@ -31,10 +31,10 @@
 
     <div class="vidage">
       <!--<video id="vidage" class="vidage-video" preload="metadata" loop autoplay muted>-->
-      	<video id="vidage" class="vidage-video" preload="metadata" muted loop autoplay>
+      	<video muted loop autoplay id="vidage" class="vidage-video" preload="metadata">
         <source src="video/eriki.mp4" type="video/mp4">
         <source src="video/eriki.webm" type="video/webm">
-        <source src="video/eriki1.ogg" type="video/ogg">
+        <source src="video/1.ogg" type="video/ogg">
         		  Your browser does not support HTML5 video.
       </video>
     </div>
@@ -56,8 +56,8 @@
 <div class = "user-switch">
 
 	<div class = "user-switch__item">
-		<h2 class = "user-switch__header">СПЕЦИАЛИСТАМ</h2>
-		<p class = "user-switch__big-text">Вы работник отрасли? Тогда Вам сюда!</p>
+		<a href = "special.html" class = "user-switch__header-link"><h2 class = "user-switch__header">СПЕЦИАЛИСТАМ</h2></a>
+		<!--<p class = "user-switch__big-text">Вы работник отрасли? Тогда Вам сюда!</p>-->
 		<p class = "user-switch__small-text">Данный раздел создан для
 врачей/специалистов. В общем здесь 
 нужен какой-то текст-анонс, который заинтересует 
@@ -65,18 +65,24 @@
 	<a class = "main-button" href = "special.html">ПЕРЕЙТИ</a>
 	</div>
 	<div class = "user-switch__item">
-		<h2 class = "user-switch__header">ПАЦИЕНТАМ</h2>
-		<p class = "user-switch__big-text">Хотите знать о проблеме? Этот раздел для вас.</p>
+		<a href = "patient.html" class = "user-switch__header-link"><h2 class = "user-switch__header">ПАЦИЕНТАМ</h2></a>
+		<!--<p class = "user-switch__big-text">Хотите знать о проблеме? Этот раздел для вас.</p>-->
 		<p class = "user-switch__small-text">В данном разделе, созданном
 специально для обычных пользователей, Вы сможете ознакомиться... Ну и так далее, что-то в таком
 духе. Анонс, в общем.</p>
-	<a class = "main-button" href = "special.html">ПЕРЕЙТИ</a>
+	<a class = "main-button" href = "patient.html">ПЕРЕЙТИ</a>
 	</div>
 
 </div>
 
 	</section>
 
+<script>
+
+var video = document.getElementById('vidage');
+video.play();
+
+</script>
 
 
 </body>
